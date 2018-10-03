@@ -1,6 +1,6 @@
 # PayPal - Credit Card (using REST API)
 
-**Warning** Pay with Credit Card action has been deprecated in version 5.0.23 of PayPal.
+**Warning** Pay with Credit Card action has been deprecated in version 5.0.23 of PayPal and is no longer available in our products.
 
 **Breaking Changes** Increased minimum requirements to .NET 4.5 and DNN 6+
 
