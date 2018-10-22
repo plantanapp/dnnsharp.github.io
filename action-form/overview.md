@@ -6,7 +6,7 @@ layout: default
 
 ## What is Action Form ?
 
-<b>Action Form</b> is the most powerful, flexible, secure, fast, and easy-to-use tool that enables the creation of amazing web forms. The web is all about interaction, and web forms are an essential part of that. Forms created by <b>Action Form</b> are completely customizable, giving you the power to make any type of form you can imagine, e.g. surveys, contact forms, widgets, and lead generation forms etc. Moreover, it takes just minutes to set up even the most complex forms for your website, with no programming and technical experience required.
+<b>Action Form</b> is the most powerful, flexible, secure, fast, and easy-to-use tool that enables the creation of amazing web forms. The web is all about interaction, and web forms are an essential part of that. Forms created by <b>Action Form</b> are completely customizable, giving you the power to make any type of form you can imagine, e.g. surveys, contact forms, widgets, and lead generation forms etc. Moreover, it takes just minutes to set up even the most complex forms for your website, with no programming and technical experience required. You can embed them also. 
 
 Besides, you will benefit from our <a href="http://www.dnnsharp.com/support#opturl=%2Faction-form" target="_blank">excellent support</a> and quick response for implementing your feature requests.
 
