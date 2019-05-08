@@ -61,6 +61,9 @@
         "url": "/sharp-scheduler/actions/run-powershell-script.html"
     }]
 }, {
+    "title": "SQL Dependency (EXPERIMENTAL)",
+    "url": "/sharp-scheduler/sql-dependency.html"
+}, {
     "title": "History",
     "url": "/sharp-scheduler/history.html"
 }, {
