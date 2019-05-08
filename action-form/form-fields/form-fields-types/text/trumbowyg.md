@@ -7,9 +7,9 @@ Trumbowyg is a lightweight jQuery plugin used to transform a textarea into a HTM
 From the trumbowyg top button panel, you can insert a new image by URL and also you can add a specific description to each one of them.
 After you insert an image you can edit its properties by right clicking on it.
 This will open a context menu that contains:
-•    Description
-•    The units of measure for its dimensions
-•    The width of the image
+*    Description
+*    The units of measure for its dimensions
+*    The width of the image
 •    The height of the image
 •    A checkbox that offers you the possibility to keep the Aspect Ratio. (when you check it, those two values will automatically change one depending on the other)
 
