@@ -10,8 +10,8 @@ This will open a context menu that contains:
 *    Description
 *    The units of measure for its dimensions
 *    The width of the image
-•    The height of the image
-•    A checkbox that offers you the possibility to keep the Aspect Ratio. (when you check it, those two values will automatically change one depending on the other)
+*    The height of the image
+*    A checkbox that offers you the possibility to keep the Aspect Ratio. (when you check it, those two values will automatically change one depending on the other)
 
 ## Initial Value
 
