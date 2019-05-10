@@ -51,7 +51,7 @@ Note: All the levels below each page are also child pages. Select only the pages
    * Very High Boost
    * Extreme Boost
 
-4. (Optional) Starting with version 05.00.104 you can map additional properties from an **RSS Feed** to the indexed URL item or change the default ones. You can select from:
+4. (Optional) Starting with version 05.00.104 you can map additional properties from an **RSS Feed** to the indexed URL item or change the default ones. You can select from the following properties to show on the results page:
    * Author
    * Date Published
    * Title
