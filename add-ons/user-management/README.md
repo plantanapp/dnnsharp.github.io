@@ -8,7 +8,7 @@ It is fully integrated with:
 * [API Endpoint](https://www.dnnsharp.com/dnn/modules/custom-dnn-api-endpoint)
 * [Sharp Scheduler](https://www.dnnsharp.com/dnn/modules/sharp-task-scheduler)
 
-in order to allow you to perform all sort of actions like but not limited to:
+in order to allow you to perform all sort of actions like, but not limited to:
 * **Login/Register** user account
 * **Update user profile** information
 * **Update username** for a user account([read more](actions/update-username.html))

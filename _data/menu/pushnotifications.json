@@ -1,0 +1,20 @@
+[{
+  "title": "Firebase Introduction",
+  "url": "/add-ons/push-notifications/firebase/index.html",
+  "subpages": [{
+      "title": "Create Android Message",
+      "url": "/add-ons/push-notifications/firebase/create-android-message.html"
+    }, {
+      "title": "Create iOS Message",
+      "url": "/add-ons/push-notifications/firebase/create-ios-message.html"
+    },
+    {
+      "title": "Create WebPush Message",
+      "url": "/add-ons/push-notifications/firebase/create-webpush-message.html"
+    },
+    {
+      "title": "Sample - Register and receive browser notifications",
+      "url": "/add-ons/push-notifications/firebase/sample-device-reg-notification-watch.html"
+    }
+  ]
+}]
