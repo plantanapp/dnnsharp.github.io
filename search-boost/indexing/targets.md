@@ -57,7 +57,9 @@ Note: All the levels below each page are also child pages. Select only the pages
    * Title
    * Description
 
-   Below you can find an image example of how you can map an XML node from the feed to the indexing item, eg: "Author" with "dc:creator" when XML contains an `<dc:creator>FirstName LastName</dc:creator>` node. Note that if the XML contains multiple identical properties, they will be unified with a comma delimiter. For the rest of the URL types (a simple page or a sitemap) these properties will be ignored.
+    Below you can find an image example of how you can map an XML node from the feed to the indexing item, eg: "Author" with "dc:creator" when XML contains an `<dc:creator>FirstName LastName</dc:creator>` node.
+
+    Note: if the XML contains multiple identical properties, they will be unified with a comma delimiter. For the rest of the URL types (a simple page or a sitemap) these properties will be ignored.
 
    ![rss url properties](/search-boost/indexing/assets/RssUrlProperties.png)
 
