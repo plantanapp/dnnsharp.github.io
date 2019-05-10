@@ -2,6 +2,17 @@
 
 Trumbowyg is a lightweight jQuery plugin used to transform a textarea into a HTML Editor. With the purpose to be a WYSIWYG editor, this plugin have less than 30kb and delivers very good tools, such as lists, font-sizes, alignment, images, links, etc... all of this with a clean design and great performance.
 
+## Trumbowyg Image insert
+
+From the trumbowyg top button panel, you can insert a new image by URL and also you can add a specific description to each one of them.
+After you insert an image you can edit its properties by right clicking on it.
+This will open a context menu that contains:
+*    Description
+*    The units of measure for its dimensions
+*    The width of the image
+*    The height of the image
+*    A checkbox that offers you the possibility to keep the Aspect Ratio. (when you check it, those two values will automatically change one depending on the other)
+
 ## Initial Value
 
 The fields loads initially having this value. Supports [My Tokens](/my-tokens/index.html) so you can pull data from various sources such as user profile.

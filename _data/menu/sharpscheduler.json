@@ -28,6 +28,9 @@
     }, {
         "title": "Time Triggers",
         "url": "/sharp-scheduler/triggers/time-triggers.html"
+    }, {
+        "title": "Manually Trigger Job Remotely",
+        "url": "/sharp-scheduler/triggers/manual-trigger.html"
     }]
 }, {
     "title": "Actions",
@@ -57,6 +60,9 @@
         "title": "Shell:Run PowerShell Script",
         "url": "/sharp-scheduler/actions/run-powershell-script.html"
     }]
+}, {
+    "title": "SQL Dependency (EXPERIMENTAL)",
+    "url": "/sharp-scheduler/sql-dependency.html"
 }, {
     "title": "History",
     "url": "/sharp-scheduler/history.html"
