@@ -193,6 +193,9 @@
         "title": "Regex - Multiple Results",
         "url": "/actions/parsing/regex-multiple-results.html"
     }, {
+        "title": "Regex Replace",
+        "url": "/actions/parsing/regex-replace.html"
+    }, {
         "title": "Parse JSON into tokens",
         "url": "/actions/parsing/parse_json_into_tokens.html"
     }]
