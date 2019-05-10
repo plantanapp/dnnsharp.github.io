@@ -73,6 +73,16 @@ This field allows attaching custom data to documents. These fields will be passe
 When set to true, Search Boost will bring the results in the search results regardless of the security. But, if the user doesn't have access to the file, the browser will redirect to the login page before redirecting to the file.
 Here is a video with a simple setup that uses the Ignore Security option youtu.be/Jov0OxzkWrM
 
+* **roles, deniedRoles, allowedUsers, deniedUsers (new in 5.0.103)**
+
+Also, you can add security options in this file that implement the DNN standard. You can add nodes with the keys:
+
+* 'roles' and 'deniedRoles' in which you specify the role names.
+
+* 'allowedUsers' and 'deniedUsers' in which you specify the User Ids.
+
+ You can  add items in these nodes in a list format, separating each item with "\n", ";", ",".
+
 Along with all the settings present in the admin console, metadata is a very powerful tool to fine tune searching.
 Also, metadata makes it very powerful to integrate with other document management software as long as there's a "glue" application capable of reading the setting from the document management software and creating the metadata file. 
 Important!
