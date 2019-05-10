@@ -75,7 +75,7 @@ Here is a video with a simple setup that uses the Ignore Security option youtu.b
 
 * **roles, deniedRoles, allowedUsers, deniedUsers (new in 5.0.103)**
 
-Also, you can add security options in this file that implement the DNN standard. You can add nodes with the keys:
+Security features can be implemented in the metadata file, according with the DNN standard. Nodes can be added with the following keys:
 
 * 'roles' and 'deniedRoles' in which you specify the role names.
 
