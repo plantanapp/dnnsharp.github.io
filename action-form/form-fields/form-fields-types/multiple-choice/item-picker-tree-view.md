@@ -2,6 +2,9 @@
 
 This field was specially designed for choosing items from a dropdown where the data source and the display should be structured as a tree. There are now 3 data sources that where redesigned to work properly with this new field in Action Form and Action Grid \(Form Builder\). Those are: **PortalPages**, **PortalFolderList** and the most powerful **SQL Query.**
 
+## Display
+The default display for the tree is inside a dropdown, but you can check the Show Inline checkbox to display the tree without the dropdown.
+
 # PortalPages & PortalFolderList
 
 These datasources will bind all the the data and you will be able to select a page or a node \(a page with subpages or folder\). There are no restriction applied for those data sources and you can select only one.
