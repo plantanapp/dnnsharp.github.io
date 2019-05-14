@@ -15,7 +15,7 @@ You will need two files, the core firebase SDK and the firebase messaging SDK. Y
     // setting a timeout to allow the browser to load the above files
     // a document.onload() or $(document).ready() could work as well depending on the situation.
     setTimeout(function() {
-        // TODO: Your web app's Firebase configuration (see official docs above to learn how to obtain it)
+        // TODO: Your web app's Firebase configuration (see official docs above to learn how to obtain it or https://support.google.com/firebase/answer/7015592#web)
         var firebaseConfig = {
             apiKey: "api-key",
             authDomain: "project-id.firebaseapp.com",
@@ -63,11 +63,18 @@ Prerequisites for a service worker:
 3. Browser support. Service workers are supported by Chrome, Firefox, Opera, Microsoft Edge and Safari. You can see all the browsers on the [Can I Use](https://caniuse.com/#feat=serviceworkers) site.
 
 Add the following to the website `manifest.json`. Make sure to add the browser sender ID exactly as shown (do not change the value). [Docs](https://firebase.google.com/docs/cloud-messaging/js/client#configure_the_browser_to_receive_messages)
+
 ``` json
 {
   "gcm_sender_id": "103953800507"
 }
 ```
+
+Add the manifest file in the `<head>` section of your site
+``` html
+<link rel="manifest" href="/manifest.json">
+```
+
 For improved user experience you could also specify [PWA related parameters](https://developers.google.com/web/fundamentals/web-app-manifest/) in the `manifest.json` file. Follow the docs to [test your manifest](https://developers.google.com/web/fundamentals/web-app-manifest/#test). Here is an example.
 ``` json
 {
