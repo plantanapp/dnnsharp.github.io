@@ -9,7 +9,7 @@ For testing purposes you can find a [sample implementation for registering and r
 Before starting to use the **Send push notification** action, make sure that the [Firebase Cloud Messaging API is enabled for your Firebase project](https://console.developers.google.com/apis/api/fcm.googleapis.com/overview).
 
 Here are the parameters for the **Send push notification** action:
-* **Credential Key** - To send messages through the Firebase Messaging API the request needs to be authenticated. A private key file must be generated through the [Firebase Console](https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk) ([docs](https://firebase.google.com/docs/cloud-messaging/auth-server#provide_credentials_manually)). This file must be stored on the server serving the DNN site and an entry must be added in the DNN site web.config pointing to it. The entry must be added in the **appSettings** section like this (the key can have any value):
+* **Credential Key** - To send messages through the Firebase Messaging API the request needs to be authenticated. A private key file must be generated through the [Firebase Console](https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk) ([docs](https://firebase.google.com/docs/cloud-messaging/auth-server#provide_credentials_manually)). This file must be stored on the server serving the DNN site and an entry must be added in the DNN site web.config pointing to it. The entry must be added in the **appSettings** section like below. The key can have any value, but the **value must be the full path to the credential file** - e.g. C:\www\file.json.
     ``` xml
     <appSettings>
         <add key="fcm_credential" value="<path to file>\<filename>.json" />
