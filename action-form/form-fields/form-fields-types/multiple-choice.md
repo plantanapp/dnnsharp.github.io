@@ -18,29 +18,14 @@ The Multiple Choice Field is a closed-ended field type where people can select o
 * [Yes/No/Maybe \(Radio Boxes\)](/action-form/form-fields/form-fields-types/multiple-choice/yesnomaybe-radio-boxes.html)
 
 ### Datasource types:
-* **Page Content Templates**
-* **Portal Files**
-* **Portal Folder List**
-* **Containers**
-* **Portal Pages**
-* **Admin Pages**
-* **Host Pages**
-* **Portals**
-* **Modules**
-* **DNN Modules**
-* **Db Tables**
-* **DNN Email Templates Source**
-* **Credential Store Credential Groups**
-* **Credential Store Credential Types**
-* **Excel Columns**
-* **Module Items**
-* **Portal Aliases All**
-* **Portal Hosts**
-* **Roles**
-* **Stripe Connected Accounts(obsolete)**
-* **Stripe Connected Accounts**
-* **Tabs Pro Get Tabs**
-* **Time Zone List**
-* **Year Range**
-* **Items**
-* **SQL Query**
+
+The [multiple choice fields](/action-form/form-fields/form-fields-types/multiple-choice.html) that are available in [Action Form](https://www.dnnsharp.com/dnn/modules/action-form-builder) share a series of datasources like, but not limited to:
+* Portal/Admin/Host pages
+* Portals/Modules/Roles/Containers
+* TimeZone list
+* Year range
+* [Items](multiple-choice/datasource/items-datasource.html)
+* [SQL Query](multiple-choice/datasource/sql-query-datasource.html)
+* [Server request (JSON)](multiple-choice/datasource/server-request-json-datasource.html)
+
+[Click here](multiple-choice/datasource/index.html) to read more about Multiple Choice fields datasources.
