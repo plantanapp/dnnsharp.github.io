@@ -15,7 +15,7 @@ On submit, this field will generate the following tokens: \[&lt;FieldName&gt;\] 
 
 * Datasource
 
-  * Choose from existing data sources or provide values into the Item List area; Input one item per line. If you need to provide different text and value, then separate them by pipe. Can contain [My Tokens](/my-tokens/index.html).
+  * Choose from existing data sources([detailed here](datasource/index.html)) or provide values into the Item List area; Input one item per line. If you need to provide different text and value, then separate them by pipe. Can contain [My Tokens](/my-tokens/index.html).
 
 * Radio Buttons
 
