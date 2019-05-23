@@ -1,5 +1,5 @@
 ---
-redirect_from: "/action-form/form-actions/data/run-sql-query.html"
+redirect_from: "/action-form/form-actions/data/run-sql-query"
 ---
 # Run SQL Query
 
