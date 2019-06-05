@@ -128,6 +128,16 @@
             "url": "/action-form/form-fields/form-fields-types/files/file-manager.html"
         }]
     }, {
+        "title": "Google",
+        "url": "/action-form/form-fields/form-fields-types/google.html",
+        "subpages": [{
+            "title": "Google Maps Location Picker",
+            "url": "/action-form/form-fields/form-fields-types/google/google-maps-location-picker.html"
+        },{
+            "title": "Google Places",
+            "url": "/action-form/form-fields/form-fields-types/google/google-places.html"
+        }]
+    }, {
         "title": "Hidden Data",
         "url": "/action-form/form-fields/form-fields-types/hidden-data/hidden-data.html",
         "subpages": [{
