@@ -2,7 +2,23 @@
 
 This component consists of 2 subcomponent UI widgets: one for the date and one for the time selection process.
 
-Allows users to select date and/or time. On submit, this field will generate the following tokens: \[&lt;FieldName&gt;\] \(which yields the value\), \[&lt;FieldName&gt;:Date\], \[&lt;FieldName&gt;Day\], \[&lt;FieldName&gt;:Month\], \[&lt;FieldName&gt;:Year\], \[&lt;FieldName&gt;:DayOfMonth\], \[&lt;FieldName&gt;:DayOfYear\], \[&lt;FieldName&gt;:Time\], \[&lt;FieldName&gt;:Hour\], \[&lt;FieldName&gt;:Minute\], \[&lt;FieldName&gt;:Iso\]
+Allows users to select date and/or time. On submit, this field will generate the following tokens: _[FieldName](which yields the value), [FieldName:Date], [FieldNameDay], [FieldName:Month], [FieldName:Year], [FieldName:DayOfMonth], [FieldName:DayOfYear], [FieldName&:Time], [FieldName:Hour], [FieldName:Minute], [FieldName:Iso]_
+
+### Display mode
+The filed has multipe display options which can be selected from the Admin as follows:
+![DatePicker display modes](http://s3.amazonaws.com/static.dnnsharp.com/documentation/datepicker_display_modes.png "datepicker display modes")
+
+* __Clickable Textbox__ _(default mode)_ - which shows on the form just a textbox; when clicked, the textbox will open the datepicker in popup in order for the date/time to be selected from the date picker control.
+  
+* __Inline__ - this option will display the entire date picker control inline on your form. 
+    > *__Inline__ was added in Action Form 5.0.420*
+    ![Datepicker display inline setting](https://static.dnnsharp.com/documentation/datepicker_display_inline_setting.png)
+* __Textbox with button__ - this option is considered a more manual mode of the datepicker and when using it we recommend to always add a validator; it is a textbox in which the user can type date/time but which also has an attached button that when clicked will open the date picker control in a popup. 
+  > *__Textbox with button__ was added in Action Form 5.0.580*
+  ![Datepicker display inline setting](http://s3.amazonaws.com/static.dnnsharp.com/documentation/datepicker_display_textbox_button_setting.png)
+
+
+
 
 ### Options
 
