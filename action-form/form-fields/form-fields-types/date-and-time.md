@@ -6,7 +6,7 @@ You can customize the date picker using the jQuery Theme option from the General
 
 * [Date \(with jQuery DatePicker\)](/action-form/form-fields/form-fields-types/date-and-time/date-with-jquery-datepicker.html)
 * [Date \(with Month/Year Picker\)](/action-form/form-fields/form-fields-types/date-and-time/date-with-monthyear-picker.html)
-* [Date And Time](/action-form/form-fields/form-fields-types/date-and-time.html)
+* [Date And Time](/action-form/form-fields/form-fields-types/date-and-time/date-and-time.html)
 
 ![](assets/8a223f8b04[1].png)
 
