@@ -1,6 +1,6 @@
 # Repeat (For loop / While loop)
 
-> Aded in modules released after June 11<sup>th</sup> 2019 ([Action Form 5.0.585+]())
+> Added in modules released after June 11<sup>th</sup> 2019 ([Action Form 5.0.585+](https://www.dnnsharp.com/download?p=AFORM&v=05.00.585))
 > 
 The **Repeat** action will help you execute a set of actions in a loop. 
 It can act as:
