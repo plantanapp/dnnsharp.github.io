@@ -15,7 +15,7 @@ The following fields can be configured:
 * **POST Data** - This is data to send to the URL using POST operation. Put **key=value** pairs, each on a separate line. It’s also possible to post whole messages, for example and **XML** \(that SOAP-like services expect\) by simply putting the XML without any lines. This field supports context tokens and My Tokens.
   > Starting with [Action Form 5.0.583](http://www.dnnsharp.com/download?p=AFORM&v=05.00.583) the POST Data parameters are being automatically passed on in the URL for requests to GET methods; prior to this version, when GET methods are called, the parameters need to be passed on in the URL
 * **Headers** - you can specify custom headers to be passed on with the request like Authorization, Content-Type...
-* **Output token name** - the anme of the token in whcih the response of the server request action will be stored; it can be referenced in future actions.
+* **Output token name** - the name of the token in which the response of the server request action will be stored; it can be referenced in future actions.
 * **On Error** - you can define a list of actions to be executed when the Server request action fails
   
 ![](https://static.dnnsharp.com/documentation/server_request.png)
