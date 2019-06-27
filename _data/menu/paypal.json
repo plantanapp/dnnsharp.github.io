@@ -19,4 +19,7 @@
 },{
   "title":"Paypal - Parse IPN Request",
   "url":"integrations/paypal/paypal-parse-ipn-request.html" 
+},{
+  "title":"Paypal - Get Transaction Details",
+  "url":"integrations/paypal/paypal-get-transaction-details.html" 
 }]
