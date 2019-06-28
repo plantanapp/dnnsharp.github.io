@@ -27,5 +27,6 @@ The [multiple choice fields](/action-form/form-fields/form-fields-types/multiple
 * [Items](multiple-choice/datasource/items-datasource.html)
 * [SQL Query](multiple-choice/datasource/sql-query-datasource.html)
 * [Server request (JSON)](multiple-choice/datasource/server-request-json-datasource.html)
+* [API Endpoint Method](multiple-choice/datasource/api-endpoint-method-datasource.html)
 
 [Click here](multiple-choice/datasource/index.html) to read more about Multiple Choice fields datasources.
