@@ -10,6 +10,7 @@ The Multiple Choice Field is a closed-ended field type where people can select o
 * [Multiple Choice \(With Checkboxes\)](/action-form/form-fields/form-fields-types/multiple-choice/multiple-choice-with-checkboxes.html)
 * [Multiple Choice \(With Dropdown\)](/action-form/form-fields/form-fields-types/multiple-choice/multiple-choice-with-dropdown.html)
 * [Multiple Choice \(With Radio boxes\)](/action-form/form-fields/form-fields-types/multiple-choice/multiple-choice-with-radio-boxes.html)
+* [Group Multiple Choice \(With Radio boxes\)](/action-form/form-fields/form-fields-types/multiple-choice/group-multiple-choice-with-radio-boxes.html)
 * [Slider](/action-form/form-fields/form-fields-types/multiple-choice/slider.html)
 * [Sortable Input](/action-form/form-fields/form-fields-types/multiple-choice/sortable-input.html)
 * [Tags Input](/action-form/form-fields/form-fields-types/multiple-choice/tags-input.html)

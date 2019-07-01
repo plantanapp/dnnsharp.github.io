@@ -178,6 +178,9 @@
         }, {
             "title": "Multiple Choice (with Radio boxes)",
             "url": "/action-form/form-fields/form-fields-types/multiple-choice/multiple-choice-with-radio-boxes.html"
+        },{
+            "title": "Group Multiple Choice (with Radio boxes)",
+            "url": "/action-form/form-fields/form-fields-types/multiple-choice/group-multiple-choice-with-radio-boxes.html"
         }, {
             "title": "Slider",
             "url": "/action-form/form-fields/form-fields-types/multiple-choice/slider.html"
