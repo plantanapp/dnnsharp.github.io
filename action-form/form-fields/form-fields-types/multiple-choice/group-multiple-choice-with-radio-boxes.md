@@ -16,4 +16,4 @@ The functionality of each individual **_Multiple choice (with radio boxes)_** fi
 The order of the fields in the group is determined by the order they appear in the admin of the Group field and not by the one specified in Action Form Layout
 ![Order of fields in radio Buttons Grid](https://static.dnnsharp.com/documentation/order_of_fields_in_radio_buttons_grid.png)
 
-The number of columns taken by the label will decrease the number of possible items that can be showed as selectable options(radio buttons) from the total of 12(label+items=MAX 12).
+The number of columns taken by the label will decrease the number of possible items that can be shown as selectable options(radio buttons) from the total of 12(label+items=MAX 12).
