@@ -7,7 +7,122 @@ According to the Architecture a content source is responsible to get new content
     - implement _ComputeResultUrl_ method. The default should be:
  `return new GenericUrlResolver(searchResult, searchContext).GetUrlForSearchResult();`
 
-Here is a sample (works with SearchBoost >= 3.1.43):
+For SearchBoost >= 4.0.0 you can use the following sample:
+
+```csharp
+using DnnSharp.SearchBoost.Core.Behaviors;
+using DnnSharp.SearchBoost.Core.ContentSource;
+using DnnSharp.SearchBoost.Core.Indexing;
+using DnnSharp.SearchBoost.Core.Search;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Threading;
+
+namespace MyImplementation.MyContentSources {
+    public class FirstContentSource : IContentSource {
+
+        public static int StartId { get; set; } = 0;
+
+        public string ComputeResultUrl(SbSearchResult searchResult, SearchContext searchContext) {
+            return new GenericUrlResolver() {
+                SearchResult = searchResult,
+                SearchContext = searchContext
+            }.GetUrlForSearchResult();
+        }
+
+
+        const string MyContent = @"My Test Content";
+
+        public IEnumerable<IndexingJob> Query(SearchBehavior behavior, DateTimeOffset? since, CancellationToken cancellationToken) {
+
+            for (var i = StartId; i < StartId + 10; i++) {
+                var job = new IndexingJob();
+                job.ContentSourceId = "DnnModules";
+                job.Due = DateTimeOffset.Now;
+                job.DatePublished = DateTimeOffset.Now;
+                job.Action = "add";
+                job.Priority = ePriorityIndexingJob.Low;
+
+                job.BehaviorId = behavior.Id;
+                job.PortalId = 0;
+                job.TabId = 1;
+                job.ModuleId = 1;
+
+                job.Metadata.Type = "mod";
+                job.Metadata.SubType = "Test Module";
+
+                job.Metadata.Url = "";
+
+                job.ItemId = "test-" + i;
+                job.Metadata.Title = "Test " + i;
+                job.Contents = Encoding.UTF8.GetBytes(MyContent);
+                job.ContentType = "text/plain";
+                job.Metadata.DatePublished = DateTimeOffset.Now;
+
+                job.Metadata.ItemId = job.ItemId;
+                job.Metadata.ItemPath = "test/"+i;
+
+                job.Metadata.ContainerId = "Test";
+                job.Metadata.ContainerName = "Test";
+                job.Metadata.ContainerPath = "Test";
+
+                yield return job;
+            }
+
+        }
+    }
+}
+```
+Note that you can use the _IndexingJob_ class to create your own job in other places of your code and simply call the _Save()_ method on that job object,
+
+```csharp
+    [Common2.IoC.IoCService]
+    Common2.Services.Dnn.IPortalService PortalService { get; set; }
+
+    void SaveJob(SearchBehavior behavior) {
+
+        var job = new IndexingJob();
+        job.ContentSourceId = "DnnModules";
+        job.Due = DateTimeOffset.Now;
+        job.DatePublished = DateTimeOffset.Now;
+        job.Action = "add";
+        job.Priority = ePriorityIndexingJob.Low;
+
+        job.BehaviorId = BehaviorService.GetDefaultBehavior(PortalService.GetCurrentPortalSettings().PortalId).Id; // all jobs must belong to a behavior
+        // or you can get it by name using:
+        // job.BehaviorId = BehaviorService.GetAll().FirstOrDefault(x => x.Name == behaviorName && x.PortalId == portalId)
+        job.PortalId = 0;
+        job.TabId = 1;
+        job.ModuleId = 1;
+
+        job.Metadata.Type = "mycustomtype"; 
+        job.Metadata.SubType = "SomeSubType";
+
+        job.Metadata.Url = ""; // you can add here a custom url for search result, otherwise it will redirect to the specified tabid property
+
+        job.ItemId = "MyUniqueId";
+        job.Metadata.Title = "Job Title In Results";
+        job.Contents = Encoding.UTF8.GetBytes("My Custom Content");
+        job.ContentType = "text/plain";
+        job.Metadata.DatePublished = DateTimeOffset.Now;
+
+        job.Metadata.ItemId = job.ItemId;
+        job.Metadata.ItemPath = "test/path_if_needed"; // useful for files, to get them from DNN when using the DnnFileClient content client
+
+        job.ContentClient = "MyCustomContentClient"; // Content clients are defined in /Config/ContentClients folders, and here you type their ID property, like "WebClient" or "DnnFile"
+        job.ContentClientOptions = new Common.SettingsDictionary(); // this is pased to the content client for further options. Not needed for the default ones.
+
+        job.Metadata.ContainerId = "Test";
+        job.Metadata.ContainerName = "Test";
+        job.Metadata.ContainerPath = "Test";
+
+        job.Save();
+    }
+```
+
+## Older Versions
+Here is a sample that works with SearchBoost >= 3.1.43, up until SearchBoost <= 4.0.0:
 
 ```csharp
 using DnnSharp.SearchBoost.Core.ContentSource;
