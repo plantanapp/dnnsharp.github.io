@@ -1,4 +1,7 @@
-# Run SQL Query {#run-sql-query}
+---
+redirect_from: "/action-form/form-actions/data/run-sql-query"
+---
+# Run SQL Query
 
 This action executes an SQL statement, optionally capturing the output. This action supports context tokens and **My Tokens **inside the SQL query and it is not restricted to SQL Server \(can run on any DB with ODBC support, currently being successfully used on MySQL, Oracle DB, IBM DB\)
 
