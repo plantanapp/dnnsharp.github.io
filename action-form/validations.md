@@ -17,7 +17,7 @@ In Action Form we've set-up an option to enable or disable the client side valid
 
 ## Enable required fields to accept whitespace as valid input
 
-When checked the fields will accept whitespace as valid input(as any other character). This new option can be found in General Settings right under the client-side validation checkbox. This applies to server-side validation and client-side validation.
+When checked(marked as true) the fields will accept whitespace as valid input(as any other character). This new option can be found in General Settings right under the client-side validation checkbox. This applies to server-side validation and client-side validation.
 
 ## Validate form before submit
 
