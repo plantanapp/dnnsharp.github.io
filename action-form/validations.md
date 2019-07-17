@@ -15,6 +15,10 @@ In Action Form we've set-up an option to enable or disable the client side valid
 
 ![client side validation](/action-form/assets/client-side-validation.png "client side validation")
 
+## Enable required fields to accept whitespace as a valid input
+
+If you want your required fields to accept a simple space as a valid input, you could use this option, which can be found in the general settings right under the client side validation checkbox. This applies to server side validation and client side validation.
+
 ## Validate form before submit
 
 If you are trying to implement a minimum purchase amount on one of your forms and to create an action "if total < 25 then display message", in a Submit Button add the Display Error Message action, and in Condition add the syntax : **[Total] < 25** and add Message as you please. On Authorize.net action add the syntax: **[Total] >= 25.**
