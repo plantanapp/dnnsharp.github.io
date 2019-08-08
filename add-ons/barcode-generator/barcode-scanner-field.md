@@ -2,6 +2,8 @@
 
 The Barcode scanner field is a barcode reader for Code128, Code93, Code39, Standard/Industrial 2 of 5, Interleaved 2 of 5, Codabar and EAN-13 barcodes.
 
+> Starting with [version 5.0.18](https://www.dnnsharp.com/download?p=BARCODE&v=05.00.18) it also supports scanning **QR codes**.
+
 It supports one barcode in one image and detects what type of barcode there is.
 
 This field allows you to scan barcodes using your device's camera. It's very easy to use - click on the Upload button, allow it to use your Camera device, just take a photo over the barcode and press OK. After just a few seconds, the Barcode Scanner finds a match and appends the corresponding code into the Action Form's input.
