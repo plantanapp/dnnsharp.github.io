@@ -142,6 +142,10 @@
         "title": "PayPal",
         "ref": "paypal",
         "url": "/integrations/paypal/index.html"
+    },{
+        "title": "EasyDNNnews",
+        "ref": "easydnnnews",
+        "url": "/integrations/easydnnnews/index.html"
     }, {
         "title": "Authorize Net",
         "url": "/integrations/authorizenet/index.html",

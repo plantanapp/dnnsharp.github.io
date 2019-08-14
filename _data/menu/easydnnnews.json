@@ -1,0 +1,34 @@
+[{
+    "title":"Overview",
+    "url":"/integrations/easydnnnews/index.html"    
+  }, {
+    "title": "EasyDNNnews actions",
+    "url": "/integrations/easydnnnews/easydnnnews-actions.html",
+    "subpages": [{
+    "title": "Add Article",
+    "url": "/integrations/easydnnnews/add-easydnnnews-article.html"
+},
+{
+    "title": "Publish Article",
+    "url": "/integrations/easydnnnews/publish-easydnnnews-article.html"
+},
+{
+    "title": "Unpublish Article",
+    "url": "/integrations/easydnnnews/unpublish-easydnnnews-article.html"
+},
+{
+    "title": "Delete Article",
+    "url": "/integrations/easydnnnews/delete-easydnnnews-article.html"
+},
+{
+    "title": "Get data from Article",
+    "url": "/integrations/easydnnnews/get-data-from-easydnnnews-article.html"
+},
+{
+    "title": "Add Map Marker to Article",
+    "url": "/integrations/easydnnnews/add-easydnnnews-article-map-marker.html"
+},{
+    "title": "Add Video to Article",
+    "url": "/integrations/easydnnnews/add-video-to-easydnnnews-article.html"
+}]
+}]
