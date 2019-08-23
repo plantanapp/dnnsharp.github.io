@@ -109,6 +109,9 @@
         "subpages": [{
             "title": "Actions",
             "url": "/add-ons/file-management/actions.html"
+        },{
+            "title": "Replace tokens in word document (DOCX)",
+            "url": "/add-ons/file-management/actions/replace-tokens-in-word(docx).html"
         }]
     }, {
         "title": "Portal Management",
