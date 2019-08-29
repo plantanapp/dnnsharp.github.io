@@ -1,6 +1,6 @@
 # Replace tokens in word document (DOCX)
 
-> Feature was added in [File Management version 5.0.xx]()
+> Feature was added in [File Management version 5.0.25](http://www.dnnsharp.com/download?p=FILEMNGM&v=05.00.25)
 
 Using this action you can generate documents, based on a template, by using tokens. In order to use it, your template document needs to have *plain text content controls* inserted in the document.
 
