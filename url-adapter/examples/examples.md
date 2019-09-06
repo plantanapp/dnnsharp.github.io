@@ -57,6 +57,6 @@ This is an important note to be made, in Condition the # inside an URL will not 
 
 ## How to use a Token in an Advanced Rules
 
-A simple basic example is to manually create a token with an URL inside the Constant String and use it in Target URL to make a redirect. 
+A simple basic example is to manually create a custom token with an URL inside the Constant String and use it in Target URL to make a redirect. 
 
 ![token image example](token.png)

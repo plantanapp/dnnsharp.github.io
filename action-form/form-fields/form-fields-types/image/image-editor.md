@@ -13,6 +13,6 @@ The field generates 3 tokens on submit, as follows:
 
 The image resulting from this field can:
 * either be saved directly to the database in base64 format
-* or saved to disk with the help of the [Save file to disk](/actions/Save-file-to-disk.html) action by setting the input mode to *Base64 image content*
+* or saved to disk with the help of the [Save file to disk](/actions/documents/Save-file-to-disk.html) action by setting the input mode to *Base64 image content*
 
 ![Image Editor Field](https://static.dnnsharp.com/documentation/image_editor_field.png)

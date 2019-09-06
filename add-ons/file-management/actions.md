@@ -53,3 +53,5 @@ This action will create a new folder with items from the archive. You can set-up
  * **Create folders in path**: When this option is enabled the folders in path will be created if they don't exist.
 
 ![](assets/unpack-archive.png)
+
+### [Replace tokens in word document (DOCX)](/actions/replace-tokens-in-word(docx).html)
