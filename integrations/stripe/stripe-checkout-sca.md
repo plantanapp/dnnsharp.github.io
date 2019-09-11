@@ -10,7 +10,7 @@ Starting with [Stripe 5.0.27](https://www.dnnsharp.com/download?p=STRIPE&v=05.00
 
 - Stripe.js loaded on page, hence, the action can be used only with [ActionForm](/action-form/README.md) and [ActionGrid](/action-grid/index.md) products.
 - The full integration require Stripe Webhooks having minimum **version 2019-08-14**.
-- If you plan to use [ActionForm](https://www.dnnsharp.com/dnn/modules/action-form-builder) we recommend builds greater than 5.0.708 as it comes with a new action named **Load Static Files** which easily loads any JavaScript or CSS file.
+- If you plan to use [ActionForm](https://www.dnnsharp.com/dnn/modules/action-form-builder) we recommend builds greater than 5.0.709 as it comes with a new action named **Load Static Files** which easily loads any JavaScript or CSS file.
 
 ## **Getting Started**
 
