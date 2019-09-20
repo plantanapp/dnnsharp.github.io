@@ -4,12 +4,12 @@
 
 Starting in September 2019, a new regulation called [Strong Customer Authentication (SCA)](https://stripe.com/docs/strong-customer-authentication) requires businesses in Europe to request additional customer authentication for online payments. Using the new Payment Intent and Setup Intent APIs, Checkout fully supports SCA (including exemption logic) and ensures that you only ask customers to provide additional authentication when strictly necessary.
 
-Starting with [Stripe 5.0.27](https://www.dnnsharp.com/download?p=STRIPE&v=05.00.27) there is a new action named 'Stripe Checkout' which implements the *Client and server integration* from Stripe.
+Starting with [Stripe 5.0.33](https://www.dnnsharp.com/download?p=STRIPE&v=05.00.33) there is a new action named 'Stripe Checkout' which implements the *Client and server integration* from Stripe.
 
 ## **Requirements**
 
 - Stripe.js loaded on page, hence, the action can be used only with [ActionForm](/action-form/README.md) and [ActionGrid](/action-grid/index.md) products.
-- The full integration require Stripe Webhooks having minimum **version 2019-08-14**.
+- The full integration require Stripe Webhooks having fixed **version 2019-09-09**. If you can't find the version in the list, contact Stripe Support or create it programmatically. See [Stripe Webhooks documentation](https://stripe.com/docs/webhooks/setup).
 - If you plan to use [ActionForm](https://www.dnnsharp.com/dnn/modules/action-form-builder) we recommend builds greater than 5.0.709 as it comes with a new action named **Load Static Files** which easily loads any JavaScript or CSS file.
 
 ## **Getting Started**
@@ -18,9 +18,9 @@ In order to successfully integrate with the Checkout payments from Stripe, you n
 
 ### **Stripe Configuration**
 
-1. In [Stripe Dashboard](https://dashboard.stripe.com/test/dashboard) you need to configure API keys, on [this page](https://dashboard.stripe.com/test/apikeys)
+1. In [Stripe Dashboard](https://dashboard.stripe.com/test/dashboard) you need to configure API keys, on [API Keys page](https://dashboard.stripe.com/test/apikeys)
 
-2. A webhook on [Developers > Webhooks](https://dashboard.stripe.com/test/webhooks) page with version 2019-08-14, pointing to ``https://<Your_Instance_URL>/API/DnnSharp/Stripe/Payment/FullfillPayment``
+2. A webhook on [Developers > Webhooks](https://dashboard.stripe.com/test/webhooks) page with version 2019-09-09, pointing to ``https://<Your_Instance_URL>/API/DnnSharp/Stripe/Payment/FullfillPayment``
 for DNN versions 9.0.0 and above or
  ``https://<Your_Instance_URL>DesktopModules/DnnSharp/Stripe/API/Payment/FullfillPayment`` for DNN 8.0.4
 
@@ -87,8 +87,8 @@ We will read this key to authenticate the webhook calls from Stripe.
         - PlanId - created with 'Create Product' action or directly from Stripe.
         - Quantity - integer value holding the number of the items of current type.
 
-4. **On Webhook Call** parameter represent a list of actions that will execute once the payment is approved by Stripe. The [Stripe Webhook](https://stripe.com/onboarding/billing/integration/webhooks) configured in the platform will call your specified URL and execute these actions. The webhook needs to receive a response in maximum 10 seconds, otherwise it will be considered as failed and Stripe will retry again later. Also, if an error occurs, Stripe will receive an error response and will retry again later.
-Read more about webooks best practices on [Stripe documentation page](https://stripe.com/docs/webhooks/best-practices#retry-logic). Note that **final actions (eg. 'Display Message') are not supported!**
+4. **On Webhook Call** parameter represent a list of actions that will execute once the payment is approved by Stripe. The [Stripe Webhook](https://stripe.com/onboarding/billing/integration/webhooks) configured in the platform will call your specified URL and execute these actions. The webhook needs to receive a response in **maximum 10 seconds**, otherwise it will be considered as failed and Stripe will retry again later. Also, if an error occurs, Stripe will receive an error response and will retry again later.
+Read more about webooks best practices on [Stripe webhhoks documentation page](https://stripe.com/docs/webhooks/best-practices#retry-logic). Note that **final actions (eg. 'Display Message') are not supported!**
 
 ## **Useful tokens**
 
