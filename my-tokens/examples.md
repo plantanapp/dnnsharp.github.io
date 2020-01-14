@@ -239,3 +239,9 @@ The values of the token parameters that are stored inside the `Properties` as `I
 In the example above we can see that the 'Format' parameter is optional and in case it is not passed to the token a default value of *`default value`* will be set to it.
 
 Also, the token in the example supports a variable number of parameters in the format `arg{number}`.
+
+Examples of calling such a token:
+
+`[Namespace:Token(format="my argument is: {0}", arg0="arg value")]` - will result in the `my argument is: arg value` string.
+
+`[Namespace:Token(Format="arg0 is {0}, arg1 is {1}", Arg0="arg0 value", arg1="arg1 value")]` - will result in the `arg0 is arg0 value, arg1 is arg1 value` string.
