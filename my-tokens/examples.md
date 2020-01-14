@@ -200,3 +200,42 @@ Even though this scenario works, you don't need to convert to int if it's alread
 
 ### Accessing a GUID through a database cell
 If you would like to see if a GUID matches up on both the site and the external database, you need to use [Portal:GUID] to return the GUID of the current site.
+
+## Optional token parameters and variable number of parameters in Razor Scripts
+Minimum My Tokens version required for this is 5.0.82.
+
+There is now a way for you to access the token parameters list and iterate through them. Let's see an example and explain:
+
+```csharp
+@using avt.MyTokens.Core.Objects
+@{
+    var tknParams = Tokens.TknParams as TknParamsObject;
+​
+    ITokenObject format;
+    if (!tknParams.Properties.TryGetValue("Format", out format)) {
+        format = new ValueObject<string>("default value");
+    }
+​
+    var formatArguments = new List<string>();
+​
+    int i = 0;
+    ITokenObject fmtArg;
+    while (tknParams.Properties.TryGetValue("arg" + i, out fmtArg)) {
+        formatArguments.Add(fmtArg.ToString());
+        i++;
+    }
+
+    var formatStr = format.ToString();
+    var result = string.Format(formatStr, formatArguments.ToArray());
+}
+​
+@result
+```
+
+Starting on the first line we have the using statement for `avt.MyTokens.Core.Objects` namespace, which is needed so that we have access to the `TknParamsObject` class. To access the list of parameters passed to the token we use the `Properties` property of the `tknParams` variable (which is of type `TknParamsObject`). The type of the `Properties` property is `Dictionary<string, ITokenObject>` so we have access to all the Dictionary's methods defined by .net, like `ContainsKey`, `TryGetValue`, etc. The keys in the dictionary are case insensitive.
+
+The values of the token parameters that are stored inside the `Properties` as `ITokenObject` are actually instances of the `ValueObject<object>` class, which properly implements the `ToString()` method, so you can use that to get the string representation of the parameter's value.
+
+In the example above we can see that the 'Format' parameter is optional and in case it is not passed to the token a default value of *`default value`* will be set to it.
+
+Also, the token in the example supports a variable number of parameters in the format `arg{number}`.
