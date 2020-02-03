@@ -34,7 +34,7 @@ Now let's add some languages to your site and translate the Action Form module.
 
 ![edit-system](/action-form/assets/edit-system.png "edit-system")
 
-2\) Select from the left menu **Local Resources -> Desktop Modules -> AvatarSoft -> ActionForm -> App_LocalResources -> Form.** In this section we can edit the Spanish language of the **Action Form** module.
+2\) Select from the left menu **Local Resources -> Desktop Modules -> DnnSharp -> ActionForm -> App_LocalResources -> Form.** In this section we can edit the Spanish language of the **Action Form** module.
 
 ![spanish](/action-form/assets/spanish.png "spanish")
 
@@ -46,4 +46,4 @@ Now let's add some languages to your site and translate the Action Form module.
 
 You can localize all the front-end like validation messages, custom validations, the bootstrap template, also the standard templates (Contact Form, Login Form, Registration Form, Subscribe to Mailchimp). Note that for custom validators, the name must be like this: validation.*"the-validator-name"*. ex.: *validation.url*. You can localize the standard form templates (Contact Form, Login Form, Registration Form, Subscribe to Mailchimp) just by copy/paste and renaming the .config file.
 
-Ex.: In this example we will create and translate the Spanish language. Follow this path: <i>LocalResources\DesktopModules\AvatarSoft\ActionForm\Config\Templates\ </i>  and copy/paste the Contact Form.config file; rename it into *Contact Form es_ES.config*. Translate the *Contact Form es_ES.config* file. Now when you will create a standard Contact Form, you'll have the possibility to chose the language in which the form is created.
+Ex.: In this example we will create and translate the Spanish language. Follow this path: <i>LocalResources\DesktopModules\DnnSharp\ActionForm\Config\Templates\ </i>  and copy/paste the Contact Form.config file; rename it into *Contact Form es_ES.config*. Translate the *Contact Form es_ES.config* file. Now when you will create a standard Contact Form, you'll have the possibility to chose the language in which the form is created.
