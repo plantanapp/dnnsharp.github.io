@@ -34,7 +34,7 @@ Now let's add some languages to your site and translate the Action Form module.
 
 ![edit-system](/action-form/assets/edit-system.png "edit-system")
 
-2\) Select from the left menu **Local Resources -> Desktop Modules -> AvatarSoft -> ActionForm -> App_LocalResources -> Form.** In this section we can edit the Spanish language of the **Action Form** module.
+2\) Select from the left menu **Local Resources -> Desktop Modules -> DnnSharp -> ActionForm -> App_LocalResources -> Form.** In this section we can edit the Spanish language of the **Action Form** module.
 
 ![spanish](/action-form/assets/spanish.png "spanish")
 
