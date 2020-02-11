@@ -20,5 +20,5 @@ Allows users to select date and/or time. On submit, this field will generate the
 
   ![](https://s3.amazonaws.com/static.dnnsharp.com/documentation/2017/07/chrome_2017-07-07_12-29-10.png)
 
-
+Note that when the Date and Time field is initialized with a value(a date), the custom date needs to respect the specified format(MM/dd/yyyy HH:mm) or you must set the format of the field to your date's format.
 
