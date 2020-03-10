@@ -109,6 +109,9 @@
         "subpages": [{
             "title": "Actions",
             "url": "/add-ons/file-management/actions.html"
+        },{
+            "title": "Replace tokens in word document (DOCX)",
+            "url": "/add-ons/file-management/actions/replace-tokens-in-word(docx).html"
         }]
     }, {
         "title": "Portal Management",
@@ -127,6 +130,14 @@
                 "url": "/add-ons/portal-management/actions/portal-actions.html"
             }]
         }]
+    }, {
+        "title": "User Management",
+        "url": "/add-ons/user-management/index.html",
+        "ref": "usrmgmt"
+    }, {
+        "title": "Push Notifications",
+        "url":"/add-ons/push-notifications/index.html",
+        "ref": "pushnotifications"
     }]
 }, {
     "title": "Integrations",
@@ -138,6 +149,10 @@
         "title": "PayPal",
         "ref": "paypal",
         "url": "/integrations/paypal/index.html"
+    },{
+        "title": "EasyDNNnews",
+        "ref": "easydnnnews",
+        "url": "/integrations/easydnnnews/index.html"
     }, {
         "title": "Authorize Net",
         "url": "/integrations/authorizenet/index.html",

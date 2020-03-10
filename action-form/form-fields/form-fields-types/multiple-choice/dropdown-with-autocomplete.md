@@ -4,7 +4,6 @@ Enables users to quickly find and select from a pre-populated list of values as 
 
 The Dropdown with Autocomplete field provides suggestions while you type into the field. For example type "dn" for Dnn Sharp.
 
-On submit, it generates a comma-delimited list of tags.
 
 ### Options:
 

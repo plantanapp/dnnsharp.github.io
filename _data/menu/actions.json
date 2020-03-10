@@ -79,6 +79,9 @@
     }, {
         "title": "Server Request",
         "url": "/actions/data/server-request.html"
+    },{
+        "title": "Execute API Method",
+        "url": "/actions/data/execute-api-method.html"
     }, {
         "title": "Update Form Data (AJAX)",
         "url": "/actions/data/update-form-data-ajax.html"
@@ -157,6 +160,15 @@
     "subpages": [{
         "title": "Execute Actions",
         "url":"/actions/flow/execute-actions.html"
+    },{
+        "title": "Repeat",
+        "url":"/actions/flow/repeat.html"
+    }]
+},{
+    "title": "Google",
+    "subpages": [{
+        "title": "Google Maps",
+        "url":"/actions/google/google-maps-location-picker.html"
     }]
 },{
     "title": "Message",
@@ -183,6 +195,9 @@
     }, {
         "title": "Regex - Multiple Results",
         "url": "/actions/parsing/regex-multiple-results.html"
+    }, {
+        "title": "Regex Replace",
+        "url": "/actions/parsing/regex-replace.html"
     }, {
         "title": "Parse JSON into tokens",
         "url": "/actions/parsing/parse_json_into_tokens.html"

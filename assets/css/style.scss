@@ -132,6 +132,7 @@ header {
         height: auto;
         display: flex;
         align-items: center;
+        white-space: pre;
         // margin-left: -20px;
     }
 
@@ -211,6 +212,10 @@ header {
 }
 
 @media(max-width:768px) {
+    .toggled .menu-toggle{
+        display:inline;
+    }
+    
     .show-md {
         display: none;
     }
