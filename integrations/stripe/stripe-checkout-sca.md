@@ -39,7 +39,7 @@ for DNN versions 9.0.0 and above or
         - This will hold the items we need to pay for. Using this action you create only one item in an entity. In real-world cases most probably you will load them from SQL with the 'Load Entites From SQL' or 'Load Entities (JSON)'. You can use ActionGrid default entities too, but be sure to respect the names presented below in the 'Properties' parameter as those names are required.
         - **Entity Name**: let's call it '**items**'
         - **Properties**:
-            - In the **Property Name** column you need to add 5 different lines with the following keys: **Name**, **Description**, **Amount**, **Quantity**, **Currency**, **Images**(direct payment only and optional, list of public image URLs separated by a '|'). If any of these keys are missing an exception will be thrown when you click the button and the submit will fail.
+            - In the **Property Name** column you need to add 5 different lines with the following keys: **Name**, **Description**, **Amount**, **Quantity**, **Currency**, **Images**(direct payment only and optional, list of public image URLs separated by a '\|'). If any of these keys are missing an exception will be thrown when you click the button and the submit will fail.
             - In the **Property Value** column add some dummy values for each key. You can find more on the [Stripe Documentation](https://stripe.com/docs/api/checkout/sessions/create#create_checkout_session-line_items)
 
     - **Stripe Checkout** action from the **Stripe** group:
