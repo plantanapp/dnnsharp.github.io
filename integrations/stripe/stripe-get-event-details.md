@@ -8,7 +8,7 @@ Parse stripe events dynamically with the help of APIEndpoint and Stripe webhooks
 
 1. In [Stripe Dashboard](https://dashboard.stripe.com/test/dashboard) you need to configure API keys, on [API Keys page](https://dashboard.stripe.com/test/apikeys)
 
-2. A webhook on [Developers > Webhooks](https://dashboard.stripe.com/test/webhooks) page with version 2019-09-09, pointing to ``https://<Your_ApiEndpoint_URL>``.
+2. A webhook on [Developers > Webhooks](https://dashboard.stripe.com/test/webhooks) page, pointing to ``https://<Your_ApiEndpoint_URL>``.
 
 3. Also, the '**Signing Secret**' of the webhook is required to authenticate the Stripe calls, so note it down because we will add it to DNN web.config file later.
 
@@ -26,10 +26,11 @@ In order for wehbooks to work, you need to set in DNN web.config the 'Signing Se
 ## **Parameter Details**
 
 1. **Raw Json Input**
-   In this parameter, you should pass the whole JSON input that ApiEndpoint receives.
+   In this parameter, you should pass the whole JSON input that ApiEndpoint receives, you can use the ApiEndpoint `[RawInput]` token.
 
 2. **Event Type Output Token**
-   This parameter holds the event type that was received to make it more convenient for you to condition your actions based on it.
+   This parameter holds the event type (i.e.: `account.updated`) that was received to make it more convenient for you to condition your actions based on it.
+You can check all the even types that you can receive [here](https://stripe.com/docs/api/events/types).
 
 3. **Event JSON Output Token**
    This parameter holds the event JSON that was received. YOu can use both the token that you passed in the Raw Json Input or the one that is output in this token, the only difference is that the Event Json Output Token strips some of the Stripe Metada which might not be useful and will require less JSON parsing in further actions down the action stack.
