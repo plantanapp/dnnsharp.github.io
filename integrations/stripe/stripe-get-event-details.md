@@ -30,7 +30,7 @@ In order for wehbooks to work, you need to set in DNN web.config the 'Signing Se
 
 2. **Event Type Output Token**
    This parameter holds the event type (i.e.: `account.updated`) that was received to make it more convenient for you to condition your actions based on it.
-You can check all the even types that you can receive [here](https://stripe.com/docs/api/events/types).
+You can check all the event types that you can receive [here](https://stripe.com/docs/api/events/types).
 
 3. **Event JSON Output Token**
    This parameter holds the event JSON that was received. YOu can use both the token that you passed in the Raw Json Input or the one that is output in this token, the only difference is that the Event Json Output Token strips some of the Stripe Metada which might not be useful and will require less JSON parsing in further actions down the action stack.
