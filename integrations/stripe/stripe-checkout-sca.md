@@ -63,7 +63,7 @@ for DNN versions 9.0.0 and above or
 **//configuration/appSettings** the following line:
 
 ```xml
-     <add key="DnnSharpStripeApiSigningSecretKey" value="Your_Signing_Secret_Here"/>
+     <add key="DnnSharpStripeApiSigningSecretKey_YourPortalIDHere" value="Your_Signing_Secret_Here"/>
 ```
 
 We will read this key to authenticate the webhook calls from Stripe.

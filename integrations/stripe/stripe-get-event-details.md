@@ -20,7 +20,7 @@ In order for wehbooks to work, you need to set in DNN web.config the 'Signing Se
 **//configuration/appSettings** the following line:
 
 ```xml
-     <add key="DnnSharpStripeEventApiSigningSecretKey" value="Your_Signing_Secret_Here"/>
+     <add key="DnnSharpStripeEventApiSigningSecretKey_YourPortalIDHere" value="Your_Signing_Secret_Here"/>
 ```
 
 ## **Parameter Details**
