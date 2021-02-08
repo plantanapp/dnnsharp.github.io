@@ -26,7 +26,7 @@ In order for wehbooks to work, you need to set in DNN web.config the 'Signing Se
 Starting with Stripe 05.11.01 the above mentioned way of declaring the Stripe secret key is obsolete and the new way of declaring the keys allows separate Stripe webhooks for multi-portal use as shown below.
 
 ```xml
-     <add key="DnnSharpStripeApiSigningSecretKey_YourPortalIdHere" value="Your_Signing_Secret_Here"/>
+     <add key="DnnSharpStripeEventApiSigningSecretKey_YourPortalIdHere" value="Your_Signing_Secret_Here"/>
 ```
 
 ## **Parameter Details**
