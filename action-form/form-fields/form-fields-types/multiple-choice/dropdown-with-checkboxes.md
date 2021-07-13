@@ -8,6 +8,9 @@ It allows users to select values from a list. On submit, this field will generat
 
 * Link To 
   * Link this to another multi-select field that when changed will cause this control to update with different items. For example, imagine Category and Subcategory selection. When this option is used, prefix each item below with the name of the parent category like this: "Value Of Parent Item/This Item". 
+  
+    > **Note:** When linking to another field and using the Items Data Source, if any part of the text or value of the options in the field includes a forward slash (/) character, that character must also be escaped using a back slash (\\) character. For example, if one of your items was **Type of Answer/Yes/No/Maybe**, you would enter it in your items list like this: **Type of Answer/Yes\\/No\\/Maybe**
+
 * Datasource 
   * Choose from existing data sources ([detailed here](datasource/index.html)) or provide values into the Item List area; Input one item per line. If you need to provide different text and value, then separate them by pipe. Can contain [My Tokens](/my-tokens/index.html).
 * Initially Checked
