@@ -12,6 +12,8 @@ On submit, this field will generate the following tokens: \[&lt;FieldName&gt;\] 
 * Link To
 
   * Link this to another multi-select field that when changed will cause this control to update with different items. For example, imagine Category and Subcategory selection. When this option is used, prefix each item below with the name of the parent category like this: "Value Of Parent Item/This Item". 
+  
+    > **Note:** When linking to another field and using the Items Data Source, if any part of the text or value of the options in the field includes a forward slash (\/) character, that character must also be escaped using a back slash (\\) character. For example, if you are using HTML in your item list you must escape the backslash in closing tags: &lt;b&gt;Item 1&lt;\\/b&gt;
 
 * Datasource
 
