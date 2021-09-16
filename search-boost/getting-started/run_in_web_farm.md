@@ -7,6 +7,7 @@ The problem with the search engine is that there can be only one index writer. S
 
 Don't manually index from a SearchBoost settings page as this could start on any server. Let SearchBoost [incrementallly index](/indexing-content.html) by itself - you can manually fire the _Search Boost - Query Content Sources_ schedule item.
 
+
 **Note**: If you have a synchronization mechanism set it to ignore "write.lock" files.
 
 If you are using FileBasedCachingProvider, add the setting "IsWebFarm" in web.config as follows:
@@ -20,3 +21,10 @@ In order to reach the master server from SearchBoost Admin:
  * Find the values for each server by checking the cookie in your web browser.
  * Determine the values (IIS ARR module computes the cookie value as a hash of the server name, so it should be a fixed value for each server everytime).
  * Take those values and set them as the UniqueId column value in the webservers table for the corresponding servers.
+
+Starting with Search Boost Version 4 the module no longer uses the DNN Schedule; it has scheduled back-end tasks: 
+
+- QueryContentIntervalSeconds on every 10 minutes; it searches for new content to index
+- ConsumeJobsIntervalSeconds on every 10 seconds; it actually indexes
+
+
