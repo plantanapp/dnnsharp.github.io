@@ -7,4 +7,9 @@ The problem with the search engine is that there can be only one index writer. S
 
 Don't manually index from a SearchBoost settings page as this could start on any server. Let SearchBoost [incrementallly index](/indexing-content.html) by itself - you can manually fire the _Search Boost - Query Content Sources_ schedule item.
 
+Starting with Search Boost Version 4 the module no longer uses the DNN Schedule; it has scheduled back-end tasks: 
+
+- QueryContentIntervalSeconds on every 10 minutes; it searches for new content to index
+- ConsumeJobsIntervalSeconds on every 10 seconds; it actually indexes
+
 **Note**: If you have a synchronization mechanism set it to ignore "write.lock" files.
